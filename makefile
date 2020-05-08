@@ -1,5 +1,5 @@
-main: main.c
-        gcc  -o main main.c -Wall -lm
+all:main
 
-
+main: src/main.c src/geometry.c
+	gcc -Wall -o main -I src src/main.c src/geometry.c -lm
 
