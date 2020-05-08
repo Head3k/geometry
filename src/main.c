@@ -35,7 +35,8 @@ float circle(float x, float y, float r, float* p, float* s)
 int main()
 {
     int count, i, j;
-    printf("Enter count figure\n");
+    printf("Function circle::\n");
+    printf("Enter count figure ==>\n");
     scanf("%d", &count);
     float x[count], y[count], r[count], p, s;
     int inter[count][count];
@@ -60,8 +61,8 @@ int main()
     for (i = 0; i < count; i++) {
         circle(x[i], y[i], r[i], &p, &s);
         printf("%d. circle(%.2f %.2f, %.2f)\n", i + 1, x[i], y[i], r[i]);
-        printf("    perimeter = %.3f \n", p);
-        printf("    area = %.3f \n", s);
+        printf("    perimeter ==> %.3f \n", p);
+        printf("    area ==> %.3f \n", s);
         printf("    intersects:\n");
         for (j = 0; j < count; j++) {
             if (inter[i][j] == 1) {
